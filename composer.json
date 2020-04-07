@@ -1,0 +1,29 @@
+{
+    "name": "luxiaok/phpkit",
+    "description": "PHP Kit",
+    "keywords": [
+        "php",
+        "yii2",
+        "laravel",
+        "thinkphp",
+        "qrcode"
+    ],
+    "homepage": "https://github.com/luxiaok/phpkit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xiaok",
+            "email": "luxiaok2008@gmail.com"
+        }
+    ],
+    "require": {
+        "php":">=5.6.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "phpkit\\": "./"
+        }
+    }
+}
