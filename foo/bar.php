@@ -1,7 +1,7 @@
 <?php
 namespace phpkit\foo;
 
-class bar1
+class bar
 {
 
     public function test()
