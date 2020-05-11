@@ -1,7 +1,7 @@
 <?php
 namespace phpkit;
 
-use qrcode\QRcode;
+use phpkit\qrcode\QRcode;
 use phpkit\tools\ip2Location;
 
 
@@ -152,5 +152,32 @@ class kit
             return ['code'=>-2,'msg'=>'手机号格式不正确！'];
         }
         return ['code'=>0];
+    }
+
+
+    /*
+     * 生成二维码
+     * */
+    public static function qrcode($text='Hello,world',$size=10,$margin=1,$ecc='L',$filename=null)
+    {
+        /*
+         * Writed By Xiaok
+         * 2015-07-05 21:47:18
+         *
+         * $test 数据，如果是存储utf-8编码的中文，最多984个
+         * $filename 保存的图片名称
+         * $errorCorrectionLevel 错误处理级别，即ECC
+         * $matrixPointSize 每个黑点的像素，这里用size代替
+         * $margin 图片外围的白色边框像素
+         *
+         * ECC表示纠错级别，纠错级别越高，生成图片会越大
+         * L水平     7%的字码可被修正
+         * M水平    15%的字码可被修正
+         * Q水平    25%的字码可被修正
+         * H水平    30%的字码可被修正
+         *
+         */
+
+        QRcode::png($text, $filename, $ecc, $size, $margin);
     }
 }
