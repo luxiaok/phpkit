@@ -51,3 +51,5 @@ $ip = Yii::$app->kit->get_client_ip(); //IPv4，例如：121.51.19.218
 $location = Yii::$app->kit->get_ip_location($ip); //中国 广东 深圳 腾讯云
 
 ```
+
+> 使用IP地址解析功能需要下载 `qqwry.dat` 到 `vendor/luxiaok/phpkit/tools` 目录。
