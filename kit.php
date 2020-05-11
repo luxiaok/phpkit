@@ -1,7 +1,8 @@
 <?php
 namespace phpkit;
 
-use phpkit\qrcode\QRcode;
+require_once 'tools/phpqrcode.php';
+use phpkit\tools\QRcode;
 use phpkit\tools\ip2Location;
 
 
