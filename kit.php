@@ -1,6 +1,7 @@
 <?php
 namespace phpkit;
 
+use qrcode\QRcode;
 use phpkit\tools\ip2Location;
 
 
