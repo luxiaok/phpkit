@@ -23,7 +23,16 @@ return [
 ```
 
 
-#### 应用1：生成二维码
+#### 应用1：生成随机数
+
+```php
+<?php
+$len = 12;
+$random_str = Yii::$app->kit->gen_random_str($len);
+```
+
+
+#### 应用2：生成二维码
 
 ```php
 <?php
@@ -42,7 +51,7 @@ function actionQrcode(){
 ```
 
 
-#### 应用2：解析IP地址
+#### 应用3：解析IP地址
 
 ```php
 <?php
