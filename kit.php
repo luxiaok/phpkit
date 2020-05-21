@@ -181,4 +181,14 @@ class kit
 
         QRcode::png($text, $filename, $ecc, $size, $margin);
     }
+
+
+    /*
+     * 商品价格判断：正整数或保留两位小数
+     * */
+    public static function validatePrice($price)
+    {
+        return preg_match('/^[0-9]+(.[0-9]{1,2})?$/', $price) ? true : false;
+    }
+
 }
