@@ -62,3 +62,16 @@ $location = Yii::$app->kit->get_ip_location($ip); //中国 广东 深圳 腾讯�
 ```
 
 > 使用IP地址解析功能需要下载 `qqwry.dat` 到 `vendor/luxiaok/phpkit/tools` 目录。
+
+
+#### 应用4：校验商品价格
+
+```php
+<?php
+$isPrice = Yii::$app->kit->validatePrice(666); // true
+$isPrice = Yii::$app->kit->validatePrice(0.01); // true
+$isPrice = Yii::$app->kit->validatePrice(0.012); // false
+$isPrice = Yii::$app->kit->validatePrice(-1); // false
+$isPrice = Yii::$app->kit->validatePrice(0); // true
+```
+
