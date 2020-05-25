@@ -8,7 +8,7 @@ use phpkit\tools\ip2Location;
 
 class kit
 {
-    const __version__ = '0.0.4';
+    const __version__ = '0.0.5';
 
     public function hello()
     {
