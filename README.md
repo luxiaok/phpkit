@@ -75,3 +75,5 @@ $isPrice = Yii::$app->kit->validatePrice(-1); // false
 $isPrice = Yii::$app->kit->validatePrice(0); // true
 ```
 
+#### 应用5：http请求
+
