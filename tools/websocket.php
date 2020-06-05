@@ -1,4 +1,7 @@
 <?php
+namespace phpkit\tools;
+
+use \Swoole\WebSocket\Server;
 
 /*
  * WebSocket Server based on Swoole
