@@ -80,7 +80,7 @@ $isPrice = Yii::$app->kit->validatePrice(0); // true
 
 ```php
 <?php
-use phpkit/tools/http;
+use phpkit\tools\http;
 
 $result = http::get($url,$data);
 $result = http::post($url,$data);
