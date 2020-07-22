@@ -75,5 +75,15 @@ $isPrice = Yii::$app->kit->validatePrice(-1); // false
 $isPrice = Yii::$app->kit->validatePrice(0); // true
 ```
 
+
 #### 应用5：http请求
 
+```php
+<?php
+use phpkit/tools/http;
+
+$result = http::get($url,$data);
+$result = http::post($url,$data);
+$result = http::download($url, $save_path, $filename);
+
+```
